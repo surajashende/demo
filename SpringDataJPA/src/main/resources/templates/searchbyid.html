@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Search Book by Id</title>
+</head>
+<body>
+
+<form action="#" th:action="@{/getBookById}" method="post" th:object="${book}">
+	
+	<input type="text" name="id">
+	<button type="submit">get Book</button>
+</form>
+
+</body>
+</html>
